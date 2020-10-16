@@ -251,3 +251,86 @@ button {
   height: 3px;
   background-color: var(--color-orange);
 }
+
+.category__btn {
+  border: 1px solid var(--color-light-grey);
+  border-radius: var(--size-border-radius);
+  padding: 6px 48px;
+}
+
+.category__btn.active {
+  background-color: var(--color-dark-pink);
+}
+
+.category__btn:hover {
+  background-color: var(--color-pink);
+}
+
+.category__count {
+  border-radius: 50%;
+  border: 1px solid var(--color-light-grey);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  color: var(--color-white);
+  background-color: orange;
+
+  position: relative;
+  top: -30px;
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+
+.category__btn.active .category__count,
+.category__btn:hover .category__count {
+  position: relative;
+  top: 0;
+  opacity: 1;
+}
+
+.work__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 280px;
+  height: 250px;
+  margin: 2px;
+  background-color: green;
+
+  position: relative;
+}
+
+.project__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project__desc h3 {
+  color: white;
+}
+.project__desc {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  opacity: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(10px);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.project:hover .project__desc {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
