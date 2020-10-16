@@ -114,3 +114,43 @@ ul {
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
 }
+
+/* home */
+#home {
+  background: url(imgs/home-background.png) center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+/* default button */
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+}
+
+.home__title,
+.home__desc {
+  color: var(--color-white);
+}
+
+.home__desc {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+}
+
+.home__contact {
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  padding: 4px 8px;
+  border-radius: var(--size-border-radius);
+}
