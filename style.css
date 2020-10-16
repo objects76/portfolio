@@ -1,4 +1,4 @@
-/* font-family: 'Noto Sans KR', sans-serif; */
+/*  */
 
 /* Global */
 
@@ -28,6 +28,9 @@
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
+
+  /* size */
+  --size-border-radius: 4px;
 }
 
 /* Typography */
@@ -57,4 +60,57 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+/* navbar */
+* {
+  box-sizing: border-box;
+}
+body {
+  /* cascaded */
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+}
+
+#navbar {
+  background-color: var(--color-pink);
+
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-white);
+  align-items: center;
+  padding: 0 1em;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 0 0.5em;
+  margin: 0 var(--size-border-radius);
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+}
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-dark-pink);
 }
