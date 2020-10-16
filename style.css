@@ -33,7 +33,7 @@
   --size-border-radius: 4px;
 
   /* duration */
-  --animation-duration: 300ms;
+  --animation-duration: 200ms;
 }
 
 /* Typography */
@@ -367,4 +367,36 @@ button {
 }
 .testimonial__speech-bubble a {
   color: var(--color-pink);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-pink);
+}
+
+/* .contact__email,
+.contact__title,
+.contact__right {
+  color: white;
+} */
+
+#contact * {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+
+.contact__links i {
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
 }
