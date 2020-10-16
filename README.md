@@ -13,6 +13,7 @@ custom logo maker:
 
 resizing image:
 	https://resizeimage.net/
+    https://tinypng.com/ image compressor.
 
 background:
 	https://canva.com/  youtube channel art.
@@ -25,4 +26,6 @@ git/github:
 		- another version branch(try#1)
 
 	- cli
+
+
 ```
